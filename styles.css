@@ -21,6 +21,7 @@ a:hover{
 header{
     position: relative;
     padding: 0 2rem;
+    background-color: rgb(140, 114, 165);
 }
 #navbar{
     width: 100%;
@@ -30,6 +31,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+   
 }
 #navbar #logo a{
     font-size: 1.5rem;
@@ -38,29 +40,20 @@ header{
     display: flex;
     gap: 2rem;
 }
-#navbar .toggle-button{
-    color: red;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
-}
-.action-button{
-    background-color: aqua;
-    color: orange;
-    padding: 12px 12px;
-    border: none;
-    outline: none;
-    border-radius: 15px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: scale 0.2 ease;
-}
-.action-button:hover{
-    scale: 1,05;
-    color: red;
-}
-.action-button:active{
-    scale: 0.95;
-
+@media (max-width:1000px) {
+    header{
+        background-color: rgb(140, 114, 165);
+    }
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    #navbar .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+    }
 }
